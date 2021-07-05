@@ -23,32 +23,7 @@
     
     
   </dependencies>
-  <properties>
-    <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-    <sonar.binaries>${project.basedir}/../target/classes</sonar.binaries>
-	 </properties>
-	
-	  
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.7.0.201403182114</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <destFile>${sonar.jacoco.reportPath}</destFile>
-            </configuration>
-        </plugin>
-    </plugins>
-
-	  <finalName>mvnwebapp</finalName>
+  <build>
+    <finalName>mvnwebapp</finalName>
   </build>
 </project>
